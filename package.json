@@ -1,6 +1,6 @@
 {
   "name": "lit-props",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "lit-element TypeScript properties made easy",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
@@ -35,6 +35,8 @@
     "/dist/**/*.map"
   ],
   "devDependencies": {
+    "@open-wc/testing": "^2.4.2",
+    "@open-wc/testing-karma": "^3.2.17",
     "@types/node": "^13.1.4",
     "@typescript-eslint/eslint-plugin": "^2.15.0",
     "@typescript-eslint/parser": "^2.15.0",
@@ -43,8 +45,6 @@
     "eslint": "^6.8.0",
     "lit-element": "^2.2.1",
     "source-map-support": "^0.5.16",
-    "typescript": "^3.7.4",
-    "@open-wc/testing": "^2.4.2",
-    "@open-wc/testing-karma": "^3.2.17"
+    "typescript": "^3.7.4"
   }
 }
