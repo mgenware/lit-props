@@ -1,7 +1,7 @@
 {
   "name": "lit-props",
   "version": "0.0.1",
-  "description": "lit-element TypeScript properties made easy",
+  "description": "Common lit-element TypeScript properties made easy",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "author": "Mgen (https://www.mgenware.com)",
