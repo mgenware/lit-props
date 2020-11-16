@@ -1,6 +1,6 @@
 {
   "name": "lit-props",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Common lit-element TypeScript properties made easy",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
