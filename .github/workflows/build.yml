@@ -16,4 +16,4 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: yarn
-      - run: yarn r build
+      - run: yarn test
