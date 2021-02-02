@@ -1,3 +1,5 @@
+/* eslint-disable arrow-body-style */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { property } from 'lit-element';
 
 export function string(target: any, name: string) {
