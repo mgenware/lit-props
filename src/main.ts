@@ -1,6 +1,6 @@
 /* eslint-disable arrow-body-style */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { property } from 'lit-element';
+import { property } from 'lit/decorators.js';
 
 export function string(target: any, name: string) {
   return property({ type: String })(target, name);

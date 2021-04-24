@@ -1,6 +1,7 @@
 /* eslint-disable import/extensions */
 import { html, fixture, expect } from '@open-wc/testing';
-import { LitElement, customElement } from 'lit-element';
+import { LitElement } from 'lit';
+import { customElement } from 'lit/decorators.js';
 import * as lp from '../dist/main.js';
 
 it('string', async () => {

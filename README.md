@@ -4,12 +4,13 @@
 [![npm version](https://img.shields.io/npm/v/lit-props.svg?style=flat-square)](https://npmjs.com/package/lit-props)
 [![Node.js Version](http://img.shields.io/node/v/lit-props.svg?style=flat-square)](https://nodejs.org/en/)
 
-Common lit-element TypeScript properties made easy.
+Lit TypeScript properties made easy. Zero dependencies.
 
 Without lit-props:
 
 ```ts
-import { LitElement, property, customElement } from 'lit-element';
+import { LitElement } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
 
 @customElement('my-element')
 export class MyElement extends LitElement {
@@ -22,7 +23,8 @@ export class MyElement extends LitElement {
 With lit-props:
 
 ```ts
-import { LitElement, customElement } from 'lit-element';
+import { LitElement } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
 import * as lp from 'lit-props';
 
 @customElement('my-element')
@@ -32,12 +34,6 @@ export class MyElement extends LitElement {
   @lp.reflected.bool reflectedBool = false;
 }
 ```
-
-Features:
-
-- Much shorter
-- Strongly typed
-- Tiny, zero dependencies
 
 ## Installation
 
