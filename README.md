@@ -41,7 +41,7 @@ export class MyElement extends LitElement {
 yarn add lit-props
 ```
 
-## Supported properties
+## Supported property types
 
 ```
 string
