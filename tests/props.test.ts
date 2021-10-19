@@ -1,6 +1,6 @@
 /* eslint-disable import/extensions */
-import { html, fixture, expect } from '@open-wc/testing';
-import { LitElement } from 'lit';
+import { html, fixture, expect, aTimeout } from 'qing-t';
+import { LitElement, html as litHTML } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import * as lp from '../dist/main.js';
 
@@ -52,4 +52,22 @@ it('array', async () => {
   const el = await fixture<T>(html` <t-array prop="[1,2,false,true]"></t-array> `);
 
   expect(el.prop).to.deep.eq([1, 2, false, true]);
+});
+
+it('state', async () => {
+  @customElement('t-state')
+  class T extends LitElement {
+    @lp.state s = '';
+
+    firstUpdated() {
+      this.s = 'changed';
+    }
+
+    render() {
+      return litHTML`<span>${this.s}</span>`;
+    }
+  }
+  const el = await fixture<T>(html` <t-state></t-state> `);
+  await aTimeout(100);
+  expect(el.shadowRoot?.textContent).to.eq('changed');
 });

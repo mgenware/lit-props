@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable arrow-body-style */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { property } from 'lit/decorators.js';
+import { property, state as litState } from 'lit/decorators.js';
 
 export function string(target: any, name: string) {
   return property({ type: String })(target, name);
@@ -21,6 +21,10 @@ export function object(target: any, name: string) {
 
 export function array(target: any, name: string) {
   return property({ type: Array })(target, name);
+}
+
+export function state(target: any, name: string) {
+  return litState()(target, name);
 }
 
 export const reflected = {

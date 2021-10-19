@@ -38,7 +38,7 @@ export class MyElement extends LitElement {
 ## Installation
 
 ```sh
-yarn add lit-props
+npm i lit-props
 ```
 
 ## Supported property types
