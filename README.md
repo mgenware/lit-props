@@ -17,6 +17,7 @@ export class MyElement extends LitElement {
   @property({ type: Object }) obj = {};
   @property({ type: Number }) id = 0;
   @property({ type: Boolean, reflect: true }) reflectedBool = false;
+  @state() protected _counter = 0;
 }
 ```
 
@@ -32,6 +33,7 @@ export class MyElement extends LitElement {
   @lp.object obj = {};
   @lp.number id = 0;
   @lp.reflected.bool reflectedBool = false;
+  @lp.state protected _counter = 0;
 }
 ```
 
@@ -57,3 +59,5 @@ reflected
   array
   object
 ```
+
+State is also supported via `state`.
